@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <!-- <link rel="stylesheet" href="sanitize.css"> -->
+  <script src="https://kit.fontawesome.com/63d598b7fb.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AsukaNakamura's Portfolio</title>
@@ -11,75 +12,138 @@
  　<header id="header">
     <ul id="page-link">
       <li><a href="#area-1">Profile</a></li>
-      <li><a href="#area-2">Work</a></li>
-      <li><a href="#area-3">Contact</a></li>
+      <li><a href="#area-2">Skills</a></li>
+      <li><a href="#area-3">Work</a></li>
+      <li><a href="#area-4">Contact</a></li>
     </ul>
  </header>
  <div class="main-visual">
-    <div class="main-text">
-       <p>Asuka Nakamura's Portfolio</p>
-    </div>
- </div>
- <section class="area" id="area-1">
-  <h2>Profile</h2>
-  <p>texttexttext<br>
-    texttexttext<br>
-    texttexttext<br>
-    texttexttext<br>
-    texttexttext<br>
-    texttexttext<br>
-    texttexttext<br>
-    texttexttext<br>
-    texttexttext<br>
-    texttexttext<br>
-    texttexttext<br>
-    texttexttext<br>
-    texttexttext<br>
-    texttexttext<br>
-    texttexttext<br>
-    texttexttext</p>
-  </section>
-  
-  <section class="area" id="area-2">
-  <h2>Work</h2>
-  <p>texttexttext<br>
-    texttexttext<br>
-    texttexttext<br>
-    texttexttext<br>
-    texttexttext<br>
-    texttexttext<br>
-    texttexttext<br>
-    texttexttext<br>
-    texttexttext<br>
-    texttexttext<br>
-    texttexttext<br>
-    texttexttext<br>
-    texttexttext<br>
-    texttexttext<br>
-    texttexttext<br>
-    texttexttext</p>
-  </section>
+   <div class="main-visual-content">
+      <div class="main-text">
+        <p>Asuka Nakamura's Portfolio</p>
+      </div>
+   </div>
 
-  <section class="area" id="area-3">
-    <h2>Contact</h2>
-    <p>texttexttext<br>
-      texttexttext<br>
-      texttexttext<br>
-      texttexttext<br>
-      texttexttext<br>
-      texttexttext<br>
-      texttexttext<br>
-      texttexttext<br>
-      texttexttext<br>
-      texttexttext<br>
-      texttexttext<br>
-      texttexttext<br>
-      texttexttext<br>
-      texttexttext<br>
-      texttexttext<br>
-      texttexttext</p>
-    </section>
-  <footer></footer>
+ </div>
+ <div class="area" id="area-1">
+  <h2 class="headline">Profile</h2>
+  <div class="profile">
+    <div>
+    <img class="profile-image" src="image/profile.jpg"  alt="profile image">
+    </div>
+    <div>
+      <section class="profile">
+        <ul class="timeine">
+          <li>
+            <dl>
+              <dt>2016年3月</dt>
+              <dd>
+                <strong>東京女子大学卒業</strong><br>
+                史学専攻に在籍<br>
+                西洋近世史ゼミで近代フランスの服飾史と女性史を研究
+              </dd>
+            </dl>
+            <dl>
+              <dt>2016年7月</dt>
+              <dd>
+                <strong>日本航空株式会社</strong><br>
+                客室乗務員として入社し、国内線・国際線に乗務<br>
+                好きなステイ先は沖縄、シドニー、ホノルル
+              </dd>
+            </dl>
+            <dl>
+              <dt>2020年5月</dt>
+              <dd>
+                <strong>株式会社リプロセル</strong><br>
+                営業・マーケティング部に所属し、主にWebマーケティングを担当
+              </dd>
+            </dl>
+            <dl>
+              <dt>2022年1月-4月</dt>
+              <dd>
+                <strong>DMM WEBCAMPにてプログラミング学習</strong><br>
+                「お客様視点を大切に、成長し続けるエンジニア」を目指し学習中
+              </dd>
+            </dl>
+          </li>
+        </ul>
+  
+      </section>
+    </div>
+      
+  </div>
+  </div>
+  
+  <div class="area" id="area-2">
+    <h2 class="headline">Skills</h2>
+    <div class="skills">
+      <div class="circle">
+        <h2>Front end</h2>
+        <p>HTML/CSS</p>
+        <p>Bootstrap</p>
+        <p>JavaScript<br>
+        jQuery/Ajax</p>
+      </div>
+      <div class="circle">
+        <h2>Back end</h2>
+        <p>Ruby</p>
+        <p>Ruby on Rails</p>
+      </div>
+      <div class="circle">
+        <h2>Infrastructure</h2>
+        <p>AWS</p>
+        <p>(EC2,RDS,EBS)</p>
+      </div>
+       
+    </div>
+
+  </div>
+
+  <div class="area" id="area-3">
+  <h2 class="headline">Work</h2>
+    <div class="work">
+      <div class="work-card">
+        <div>
+          <a href="https://my-closet.tokyo/" target="_blank"><img class="work-img" src="image/mycloset.jpg" alt="mycloset"></a>
+        </div>
+        <div>
+          <dl class="detail">
+            <dt class="work-name"><strong>My Closet</strong></dt>
+            <dd>ファッション好きをターゲットに<br>
+            した、コーディネート共有SNSと<br>
+            自身の所有している服の記録がで<br>
+            ２つの用途を併せ持ったウェブ<br>
+            アプリケーションです。</dd>
+            <dt>開発環境</dt>
+              <ul>
+                <li>OS: Amazon Linux</li>
+                <li>言語: Ruby,HTML,CSS,JavaScript</li>
+                <li>フレームワーク: Ruby on Rails</li>
+                <li>JSライブラリ: jQuery</li>
+                <li>IDE: Cloud9</li>
+              </ul>
+          </dl>
+        </div>
+
+      </div>
+    </div> 
+
+
+  </div>
+
+  <div class="area" id="area-4">
+    <h2 class="headline">Contact</h2>
+    <div class="contact">
+       <p><i class="far fa-envelope"></i> toy.alo.ldh@gmail.com</p>
+    </div>
+    <div class="git">
+      <a href="https://github.com/Appi66" target="_blank"><img src="image/GitHub-Mark-32px.png"></a>
+    </div> 
+  </div>
+
+  <footer> 
+    <p>Asuka Nakamura 2022</p>
+  </footer> 
   <script src="jquery.min.js"></script>
   <script src="app.js"></script>
 </body>

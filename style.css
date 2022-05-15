@@ -26,6 +26,7 @@
 a {
   text-decoration:none; 
   cursor: pointer;
+  color: #000;
 }
 
 li {
@@ -52,32 +53,203 @@ li {
   background: inherit;  
   content: '';
   position: absolute;
-  filter: blur(3px) grayscale(100%);  
-  top: -3px;
-  right: -3px;
-  bottom: -3px;
-  left: -3px;
+  filter: blur(4px) grayscale(100%);  
+  top: -4px;
+  right: -4px;
+  bottom: -4px;
+  left: -4px;
   z-index: -1;
 }
 
+.main-visual-content {
+  width: 50%;
+  height: 500px;
+  text-align: center;
+  padding: 100px 40px 300px 60px;
+  font-size: 65px;
+}
 .main-text {
   font-family: 'Raleway', sans-serif;
-  text-align: center;
-  /* line-height: 500px; */
   color: #fff;
+  border: double 5px;
+  padding: 10px;
+}
+
+h2 {
+  text-align: center;
+  margin: 15px;
+  padding: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 40px;
+}
+
+#area-1,#area-3 {
+  background-color: #fcfcfc;
+}
+.profile {
+  display: flex;
+}
+
+.profile-image {
+  border-radius: 49% 51% 66% 34% / 35% 70% 30% 65% ;
+  width: 500px;
+  height: 500px;
+  margin: 20px 100px;
+}
+
+.timeline {
+  height: 500px;
+  margin: 20px 100px 20px 10px;
+
+}
+
+dd {
+  margin-bottom: 10px;
+}
+
+
+
+
+/* CSSアニメーションの指定 */
+.headline{
+  animation: SlideIn 1.6s;
+}
+
+/* CSSアニメーションの設定 */
+@keyframes SlideIn {
+  0% {
+    opacity: 0;/*初期状態では透明に*/
+    transform: translateX(64px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes SlideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-64px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.skills {
+  display: flex;
+  width: 60%;
   margin: 0 auto;
 }
 
-.main-text p {
-  border: double 5px;
-  margin: 0;
-  padding: 0;
+.circle {
+  width: 270px;
+  height: 270px;
+  background-color: #f6f6f6;
+  border-radius:50%
+
 }
 
+.circle > p {
+  text-align: center;
+}
 
+.work-card {
+  width: 600px;
+  /* height: 400px; */
+  background-color: #f6f6f6;
+  padding: 10px;
+  display: flex;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.work {
+  display: flex;
+  
+}
+
+.work-img {
+  width: 300px;
+  height: 400px
+
+}
+
+.detail {
+  padding: 15px;
+}
+
+.work-name {
+  font-size: 30px;
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 10px;
+}
+
+.git {
+  text-align: center;
+  margin: 20px;
+}
+
+.contact {
+  text-align: center;
+ 
+}
+
+nav {
+  height: 40px
+  line-height: 40px;
+  background-color: #c6c6c6;
+}
 
 footer {
   width: 100%;
   height: 50px;
-  background-color: aquamarine;
+  background-color: #c6c6c6;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
 }
+
+@media screen and (max-width:768px) {
+
+  
+  .profile {
+    display: block;
+  }
+
+  .profile-image {
+    border-radius: 49% 51% 66% 34% / 35% 70% 30% 65% ;
+    width: 300px;
+    height: 300px;
+    margin: 20px 100px;
+    text-align: center;
+  }
+
+  .skills {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .circle {
+    margin: 0 auto;
+  }
+
+  .work-card {
+    width: 350px;
+    /* height: 400px; */
+    background-color: #f6f6f6;
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .work {
+    display: block;
+    
+  }
+}  
